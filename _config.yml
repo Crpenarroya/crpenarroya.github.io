@@ -29,7 +29,8 @@ collections:
 
 paginate: 10
 paginate_path: "/blog/:num/"
-permalink: pretty
+permalink: /:categories/:title/
+# permalink: pretty
 
 defaults:
   -
