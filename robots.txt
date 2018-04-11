@@ -1,6 +1,4 @@
----
-layout: null
-sitemap: false
----
+# robotstxt.org
+
 User-agent: *
-Sitemap: {{ site.url }}/sitemap.xml
+Allow: /

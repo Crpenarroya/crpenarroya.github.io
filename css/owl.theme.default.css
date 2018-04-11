@@ -1,0 +1,182 @@
+/**
+ * Owl Carousel v2.2.1
+ * Copyright 2013-2017 David Deutsch
+ * Licensed under  ()
+ */
+/*
+ * 	Default theme - Owl Carousel CSS File
+ */
+.owl-theme .owl-nav {
+position: absolute;
+right: 50px;
+bottom: 50px;
+/*  margin-top: 10px;
+  text-align: center;
+  -webkit-tap-highlight-color: transparent;*/ }
+  .owl-theme .owl-nav [class*='owl-'] {
+
+background: rgba(30, 30, 30, 0.7);
+color: #fff;
+width: 50px;
+height: 50px;
+border: none;
+-webkit-border-radius: 50px;
+border-radius: 50px;
+text-align: center;
+font-size: 25px;
+line-height: 54px;
+display: inline-block;
+-webkit-transform: none;
+-ms-transform: none;
+transform: none;
+-webkit-transition: .2s ease-in-out;
+transition: .2s ease-in-out;
+-webkit-transition-property: opacity, -webkit-transform;
+transition-property: opacity, -webkit-transform;
+transition-property: transform, opacity;
+transition-property: transform, opacity, -webkit-transform;
+cursor: pointer;
+
+
+
+
+
+/*    color: #FFF;
+    font-size: 14px;
+    margin: 5px;
+    padding: 4px 7px;
+    background: #D6D6D6;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 3px;*/ }
+
+
+.owl-theme .owl-nav .owl-prev {
+  margin-right: 10px;
+}
+
+.owl-theme .owl-nav .owl-prev:before {
+content: "\f3d5";
+display: inline-block;
+font-family: "Ionicons";
+speak: none;
+font-style: normal;
+font-weight: normal;
+font-variant: normal;
+text-transform: none;
+text-rendering: auto;
+line-height: 1;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale
+}
+
+.owl-theme .owl-nav .owl-next:before {
+content: "\f3d6";
+display: inline-block;
+font-family: "Ionicons";
+speak: none;
+font-style: normal;
+font-weight: normal;
+font-variant: normal;
+text-transform: none;
+text-rendering: auto;
+line-height: 1;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale
+
+}
+
+
+
+
+    .owl-theme .owl-nav [class*='owl-']:hover {
+      opacity: .8;
+/*      background: #869791;
+      color: #FFF;*/
+      text-decoration: none; }
+  .owl-theme .owl-nav .disabled {
+    opacity: 0.5;
+    cursor: default; }
+
+.owl-theme .owl-nav.disabled + .owl-dots {
+  margin-top: 10px; }
+
+.owl-theme .owl-dots {
+ width: auto;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 40px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: 2;
+
+/*  text-align: center;
+  -webkit-tap-highlight-color: transparent;*/ }
+
+
+.owl-dots {
+    counter-reset: dots;
+}
+.owl-dot:before {
+counter-increment: dots;
+content: "0" counter(dots);
+font-size: 14px;
+display: block ;
+text-align: center ;
+
+}
+
+  .owl-theme .owl-dots .owl-dot {
+    display: inline-block;
+    zoom: 1;
+    *display: inline; }
+    .owl-theme .owl-dots .owl-dot span {
+  width: 18px;
+  height: 2px;
+  margin: 0 0 20px 0;
+  background: #D6D6D6;
+  display: block;
+  -webkit-backface-visibility: visible;
+  transition: opacity 200ms ease;
+  border-radius: 30px;
+  visibility: hidden;
+
+
+/*      width: 10px;
+      height: 10px;
+      margin: 5px 7px;
+      background: #D6D6D6;
+      display: block;
+      -webkit-backface-visibility: visible;
+      transition: opacity 200ms ease;
+      border-radius: 30px;*/ }
+  .owl-theme .owl-dots .owl-dot.active span {visibility: visible;}
+  .owl-theme .owl-dots .owl-dot:hover span  {visibility: visible;}
+    .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+      background: #fff; }
+
+    .owl-dot:hover:before,
+    .owl-dot.active:before {
+      font-weight: bold;
+      background-color: transparent;
+      color: #fff;
+    }
+
+
