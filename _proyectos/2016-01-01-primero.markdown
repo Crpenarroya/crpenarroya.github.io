@@ -1,0 +1,33 @@
+---
+layout: post
+title: "Primero"
+date:   2016-01-01 15:07:43 +0100
+categories: [web, jekyll]
+description: Primero
+img: /assets/images/proyectos/proyecto_1/proyecto_1.jpg
+active: work
+---
+
+Primero
+
+<section class="intro">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-6 f28">
+				<h4>Primera entrada</h4>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia et, autem sequi laudantium, laborum, hic quis tenetur quo quisquam ipsa omnis eos numquam velit asperiores accusantium blanditiis ea minima molestias.</p>
+			</div>
+			<div class="col-md-6">
+				<ul class="list-unstyled">
+				{% for category in site.categories %}
+					<li><a href="/work/category/{{ category | first }}">{{ category | first }}</a></li>
+				{% endfor %}
+				</ul>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="js-push-navigation">
+	<img class="img-responsive" src="/assets/images/proyectos/proyecto_1/proyecto_2.jpg" alt="proyecto2">
+</section>
+

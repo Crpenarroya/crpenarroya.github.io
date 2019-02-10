@@ -1,96 +1,86 @@
-# ----
-# Site
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve --watch'. If you change this file, please restart the server process.
 
-title: Hydra Template
-url: "https://proud-alligator.cloudvent.net"
-baseurl:
-google_analytics_key:
-google_maps_javascript_api_key:
-disqus_shortname:
+# Site settings
+title: Ronin
+email: jeropol@gmail.com
+description: > # this means to ignore newlines until "baseurl:"
+  Write jero an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for
+  Google search results) and in your feed.xml site description.
+meta_author: Jeronimo Lopez
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://jeropol.github.io" # the base hostname & protocol for your site
+google_analytics_uid: UA-27533624-1  # Google analytics
 
-# Values for the jekyll-seo-tag gem (https://github.com/jekyll/jekyll-seo-tag)
-logo: /siteicon.png
-description: Product marketing template for Jekyll.
-author:
-  name:
-  email:
-  twitter: # twitter username without the @ symbol
-social:
-  name: Hydra Template
-  links:
-    - https://github.com/CloudCannon/hydra-jekyll-template
+# Build settings
+markdown: kramdown
 
-# -----
-# Build
 
 collections:
-  staff_members:
-    _hide_content: true
+  # portfolio:
+  #   output: true
+  #   permalink: /work/:title.html   
+  noticias:
+    output: true
+    permalink: /noticias/:path/
+  proyectos:
+    output: true
+    permalink: /proyectos/:path/
 
-paginate: 10
-paginate_path: "/blog/:num/"
-permalink: pretty
+
+  services:
+    output: true
+    permalink: /services/:path/
+  team:
+    output: true
+    permalink: /team/:path/
+  testimonials:
+    output: true
+    permalink: /testimonials/:path/
+
 
 defaults:
-  -
-    scope:
-      path: ""
-      type: "posts"
+  - scope:
+      type: services
     values:
-      layout: "post"
-  -
-    scope:
-      path: ""
+      layout: service
+      # bodyClass: page-services-single
+  - scope:
+      path: "images"
     values:
-      layout: "page"
-  -
-    scope:
-      path: "index.html"
-    values:
-      layout: "default"
-  -
-    scope:
-      path: "contact.html"
-    values:
-      full_width: true
+      image: true
 
-jekyll-archives:
-  enabled:
-    - categories
 
+
+# jekyll-archives:
+#   enabled:
+#     - categories
+#   permalinks:
+#     category: '/work/category/:name/'
+
+
+
+# Build settings Seo
 gems:
-  - jekyll-archives
-  - jekyll-sitemap
-  - jekyll-seo-tag
-  - jekyll-feed
-  - jekyll-paginate
+ - jekyll-sitemap # dependencias en local instalar desde el terminal gem install jekyll-sitemap
+ - jekyll-admin # dependencias en local instalar desde el terminal gem install jekyll-admin
+ - jekyll-archives #dependencias en local instalar desde el terminal gem install jekyll-archives
 
+
+
+# Exclude these files from your production _site
 exclude:
-  - Gemfile
-  - Gemfile.lock
+  - LICENSE
   - README.md
-  - LICENCE
+  - CNAME
+  - node_modules
+  - gulpfile.js
 
-# -----------
-# CloudCannon
 
-social_icons:
-  - Facebook
-  - Google Plus
-  - Instagram
-  - LinkedIn
-  - Pinterest
-  - Tumblr
-  - Twitter
-  - YouTube
-  - RSS
 
-_comments:
-  map: Update the map location and display settings.
-  latitude: Coordinates for the center marker on the map.
-  longitude: Coordinates for the center marker on the map.
-  zoom: The zoom level for the map.
-  pricing_table: Update the information in the pricing tables.
-  highlight: Emphasis the text
-  color: The background colour used in the plan name and call to action.
-  new_window: Open link in new window
+

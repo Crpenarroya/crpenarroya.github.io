@@ -1,0 +1,152 @@
+// Personal Styles
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+
+
+// Font face
+@font-face {
+    font-family: 'Neue Haas Unica Pro';
+    src: url("/assets/fonts/neue/NeueHaasUnicaPro.eot?#iefix");
+	src: url("/assets/fonts/neue/NeueHaasUnicaPro.eot?#iefix") format("eot"), 
+		 url("/assets/fonts/neue/NeueHaasUnicaPro.woff2") format("woff2"), 
+		 url("/assets/fonts/neue/NeueHaasUnicaPro.woff") format("woff"), 
+		 url("/assets/fonts/neue/NeueHaasUnicaPro.ttf") format("truetype")
+}
+
+
+@font-face {
+    font-family: Plain-Light;
+    src: url("/assets/fonts/plain/Plain-Light.woff") format("woff")
+}
+
+@font-face {
+    font-family: Plain-Bold;
+    src: url("/assets/fonts/plain/Plain-Bold.woff") format("woff")
+}
+
+
+
+
+a {
+    text-decoration: none;
+    color: rgba(45, 55, 65, .85);
+    background-image: linear-gradient(to bottom, transparent 50%, rgba(45, 55, 65, 0.25) 50%);
+    background-repeat: repeat-x;
+    background-size: 2px 2px;
+    background-position: 0 100%
+}
+
+a:hover {
+    text-decoration: none;
+    color: rgba(45, 55, 65, 0.5);
+    background-image: linear-gradient(to bottom, transparent 50%, #000 50%)
+}
+
+a:active {
+    color: #000
+}
+
+body {
+    font-family: Plain-Light, 'sans-serif';
+}
+
+
+//header[role="banner"] {
+//    position: fixed;
+//    width: 100%;
+//    z-index: 1;
+//    background-color: #fff;
+//}
+
+
+nav {
+    padding: 1rem 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 3rem;
+}
+
+nav li:last-child {
+    margin-right: 0;
+}
+
+//#nav li.logo {
+//  margin-right: 0;
+//}
+
+//#nav ul li.logo {
+//  position: absolute;
+//  right: 2rem;
+//}
+
+//@media(max-width:600px) {
+////    #nav ul li.logo {
+////        position: static
+////    }
+
+//    nav li {
+//        line-height: 1
+//    }
+
+//    nav li:first-child {
+//        width: 100%;
+//        margin-bottom: .5rem
+//    }
+//}
+
+nav a {
+    display: inline-block;
+    font-size: 0.937rem;
+    line-height: 1.5;
+//    color: rgba(45, 55, 65, .5);
+    background-image: linear-gradient(to bottom, transparent 50%, transparent 50%)
+}
+
+nav a.active {
+    color: #2d3741;
+    background-image: linear-gradient(to bottom, transparent 50%, rgba(45, 55, 65, 0.5) 50%);
+    background-repeat: repeat-x;
+    background-size: 2px 2px;
+    background-position: 0 100%
+}
+
+nav a h1 {
+    margin: 0;
+    font-size: inherit;
+    font-weight: inherit;
+    color: rgba(45, 55, 65, .85)
+}
+
+nav .logo a {
+    background-image: linear-gradient(to bottom, transparent 50%, transparent 50%)
+}
+
+
+//@media(min-width:600px) {
+//    .h1 {
+//      margin-left: -4vw; 
+//    }
+//}
+
+.h1 {
+font-family: 'Plain-Bold';
+font-weight: 500;
+font-size: 15.625vw;
+padding-top: 4vw;
+padding-bottom: 4vw;
+letter-spacing: -1.17188vw;
+line-height: 13.28125vw;
+}
+
+
+@media (min-width: 768px) { 
+    .h1 {
+      margin-left: -4vw; 
+    }
+}
+
+
+
+
+
